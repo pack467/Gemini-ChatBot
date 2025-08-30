@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gemini AI Chatbot</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="bg-decor"></div>
+
+  <header class="app-header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="img">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M12 6v6l4 2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <h1>Gemini AI Chatbot</h1>
+        <p class="muted">Ask anything • Fast • Smart</p>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <button id="theme-toggle" class="icon-btn" type="button" title="Toggle theme">
+        <span class="icon">🌙</span>
+      </button>
+      <button id="clear-chat" class="icon-btn" type="button" title="Clear chat">
+        <span class="icon">🧹</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="chat-box" class="chat-box" aria-live="polite" aria-label="Chat messages"></section>
+
+    <form id="chat-form" class="chat-input" autocomplete="off">
+      <div class="input-wrapper">
+        <textarea id="user-input" rows="1" placeholder="Type your message..." required aria-label="Your message"></textarea>
+        <span class="hint">↵ to send • Shift+↵ newline</span>
+      </div>
+      <button type="submit" class="send-btn" aria-label="Send">
+        <span class="send-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 10.5l15-7-7 15-1.5-5L4 10.5z"></path></svg>
+        </span>
+        <span class="send-text">Send</span>
+      </button>
+    </form>
+  </main>
+
+  <footer class="app-footer">
+    <p class="muted">Powered by Gemini • Tip: press <kbd>Enter</kbd> to send</p>
+    <p class="muted">© 2025 <strong>By Mhd. Galih Khairi</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
